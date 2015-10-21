@@ -1,0 +1,318 @@
+2015/10/21 11:01:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'bansach'' in /var/www/yii_framework/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/yii_framework/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/yii_framework/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/yii_framework/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/yii_framework/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/yii_framework/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /var/www/yii_framework/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/yii_framework/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/yii_framework/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/bansach/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bansach/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/bansach/index.php?r=gii/default/index
+---
+2015/10/21 13:18:38 [error] [php] include(Lm.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/bansach/protected/views/book/_form.php(36): spl_autoload_call()
+#1 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(95): BookController->renderInternal()
+#3 /var/www/yii_framework/framework/web/CController.php(869): BookController->renderFile()
+#4 /var/www/bansach/protected/views/book/create.php(18): BookController->renderPartial()
+#5 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#6 /var/www/yii_framework/framework/web/CBaseController.php(95): BookController->renderInternal()
+#7 /var/www/yii_framework/framework/web/CController.php(869): BookController->renderFile()
+#8 /var/www/yii_framework/framework/web/CController.php(782): BookController->renderPartial()
+#9 /var/www/bansach/protected/controllers/BookController.php(79): BookController->render()
+#10 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionCreate()
+#11 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): BookController->runAction()
+#13 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): BookController->filterAccessControl()
+#16 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/yii_framework/framework/web/CController.php(265): BookController->runActionWithFilters()
+#19 /var/www/yii_framework/framework/web/CWebApplication.php(282): BookController->run()
+#20 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/bansach/index.php(13): CWebApplication->run()
+REQUEST_URI=/bansach/index.php?r=book/create
+in /var/www/bansach/protected/views/book/_form.php (36)
+in /var/www/bansach/protected/views/book/create.php (18)
+in /var/www/bansach/protected/controllers/BookController.php (79)
+2015/10/21 13:55:17 [error] [exception.CException] exception 'CException' with message 'Property "Book.nxb_id" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('nxb_id')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('nxb_id')
+#2 /var/www/yii_framework/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(Book), 'nxb_id')
+#3 /var/www/yii_framework/framework/web/helpers/CHtml.php(1533): CHtml::activeInputField('text', Object(Book), 'nxb_id', Array)
+#4 /var/www/yii_framework/framework/web/widgets/CActiveForm.php(792): CHtml::activeTextField(Object(Book), 'nxb_id', Array)
+#5 /var/www/bansach/protected/views/book/_form.php(24): CActiveForm->textField(Object(Book), 'nxb_id')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/bansac...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/bansac...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/bansac...', Array, true)
+#9 /var/www/bansach/protected/views/book/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/bansac...')
+#11 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/bansac...', Array, true)
+#12 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/bansac...', Array, true)
+#13 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/bansach/protected/controllers/BookController.php(79): CController->render('create', Array)
+#15 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionCreate()
+#16 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/create')
+#26 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#27 /var/www/bansach/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/bansach/index.php?r=book/create
+---
+2015/10/21 14:32:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('suggestTags')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/suggestTag...')
+#9 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/bansach/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/bansach/index.php?r=book/suggestTags&q=t&limit=10&timestamp=1445412753622
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 03:25:58 [error] [exception.CException] exception 'CException' with message 'Property "Book.tags" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('tags')
+#1 C:\xampp\htdocs\bansach\protected\models\Book.php(133): CActiveRecord->__get('tags')
+#2 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(1871): Book->afterFind()
+#3 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(1356): CActiveRecord->populateRecord(Array)
+#4 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(1491): CActiveRecord->query(Object(CDbCriteria))
+#5 C:\xampp\htdocs\bansach\protected\controllers\BookController.php(150): CActiveRecord->findByPk('1')
+#6 C:\xampp\htdocs\bansach\protected\controllers\BookController.php(50): BookController->loadModel('1')
+#7 [internal function]: BookController->actionView('1')
+#8 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BookController), Array)
+#9 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BookController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('book/view')
+#20 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\bansach\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/bansach/index.php?r=book/view&id=1
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 03:26:45 [error] [exception.CException] exception 'CException' with message 'Property "Book.tags" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('tags')
+#1 C:\xampp\htdocs\bansach\protected\models\Book.php(133): CActiveRecord->__get('tags')
+#2 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(1871): Book->afterFind()
+#3 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(1356): CActiveRecord->populateRecord(Array)
+#4 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(1491): CActiveRecord->query(Object(CDbCriteria))
+#5 C:\xampp\htdocs\bansach\protected\controllers\BookController.php(150): CActiveRecord->findByPk('1')
+#6 C:\xampp\htdocs\bansach\protected\controllers\BookController.php(50): BookController->loadModel('1')
+#7 [internal function]: BookController->actionView('1')
+#8 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BookController), Array)
+#9 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BookController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('book/view')
+#20 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\bansach\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/bansach/index.php?r=book/view&id=1
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 15:42:01 [error] [exception.CException] exception 'CException' with message 'Property "Book._oldTags" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('_oldTags')
+#1 /var/www/bansach/protected/models/Book.php(126): CActiveRecord->__get('_oldTags')
+#2 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1100): Book->afterSave()
+#3 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#4 /var/www/bansach/protected/controllers/BookController.php(68): CActiveRecord->save()
+#5 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionCreate()
+#6 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/create')
+#16 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/bansach/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/bansach/index.php?r=book/create
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 15:42:41 [error] [exception.CException] exception 'CException' with message 'Property "Book.tags" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('tags')
+#1 /var/www/bansach/protected/models/Book.php(127): CActiveRecord->__get('tags')
+#2 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1100): Book->afterSave()
+#3 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#4 /var/www/bansach/protected/controllers/BookController.php(68): CActiveRecord->save()
+#5 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionCreate()
+#6 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/create')
+#16 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/bansach/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/bansach/index.php?r=book/create
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 15:44:21 [error] [php] include(Tag.php): failed to open stream: No such file or directory (/var/www/yii_framework/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/bansach/protected/models/Tacgia.php(165): spl_autoload_call()
+#1 /var/www/bansach/protected/models/Tacgia.php(152): Tacgia->addTags()
+#2 /var/www/bansach/protected/models/Book.php(127): Tacgia->updateFrequency()
+#3 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1100): Book->afterSave()
+#4 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(809): Book->insert()
+#5 /var/www/bansach/protected/controllers/BookController.php(68): Book->save()
+#6 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionCreate()
+#7 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): BookController->runAction()
+#9 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): BookController->filterAccessControl()
+#12 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/yii_framework/framework/web/CController.php(265): BookController->runActionWithFilters()
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): BookController->run()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/bansach/index.php(13): CWebApplication->run()
+REQUEST_URI=/bansach/index.php?r=book/create
+in /var/www/bansach/protected/models/Tacgia.php (165)
+in /var/www/bansach/protected/models/Tacgia.php (152)
+in /var/www/bansach/protected/models/Book.php (127)
+2015/10/21 15:47:52 [error] [exception.CException] exception 'CException' with message 'Tacgia and its behaviors do not have a method or closure named "suggestTags".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(227): CComponent->__call('suggestTags', Array)
+#1 /var/www/bansach/protected/controllers/BookController.php(173): CActiveRecord->__call('suggestTags', Array)
+#2 /var/www/bansach/protected/controllers/BookController.php(173): Tacgia->suggestTags('abcd')
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionSuggestTags()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('suggestTags')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/suggestTag...')
+#14 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/bansach/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bansach/index.php?r=book/suggestTags&q=abcd&limit=10&timestamp=1445417272118
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 15:47:55 [error] [exception.CException] exception 'CException' with message 'Tacgia and its behaviors do not have a method or closure named "suggestTags".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(227): CComponent->__call('suggestTags', Array)
+#1 /var/www/bansach/protected/controllers/BookController.php(173): CActiveRecord->__call('suggestTags', Array)
+#2 /var/www/bansach/protected/controllers/BookController.php(173): Tacgia->suggestTags('t')
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionSuggestTags()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('suggestTags')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/suggestTag...')
+#14 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/bansach/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bansach/index.php?r=book/suggestTags&q=t&limit=10&timestamp=1445417275643
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 15:47:57 [error] [exception.CException] exception 'CException' with message 'Tacgia and its behaviors do not have a method or closure named "suggestTags".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(227): CComponent->__call('suggestTags', Array)
+#1 /var/www/bansach/protected/controllers/BookController.php(173): CActiveRecord->__call('suggestTags', Array)
+#2 /var/www/bansach/protected/controllers/BookController.php(173): Tacgia->suggestTags('to')
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionSuggestTags()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('suggestTags')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/suggestTag...')
+#14 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/bansach/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bansach/index.php?r=book/suggestTags&q=to&limit=10&timestamp=1445417277370
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
+2015/10/21 15:48:05 [error] [exception.CException] exception 'CException' with message 'Tacgia and its behaviors do not have a method or closure named "suggestTags".' in /var/www/yii_framework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(227): CComponent->__call('suggestTags', Array)
+#1 /var/www/bansach/protected/controllers/BookController.php(173): CActiveRecord->__call('suggestTags', Array)
+#2 /var/www/bansach/protected/controllers/BookController.php(173): Tacgia->suggestTags('to')
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): BookController->actionSuggestTags()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('suggestTags')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('book/suggestTag...')
+#14 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/bansach/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bansach/index.php?r=book/suggestTags&q=to&limit=10&timestamp=1445417285045
+HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
+---
