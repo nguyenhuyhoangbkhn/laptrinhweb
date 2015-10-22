@@ -21,6 +21,10 @@
 	<?php echo CHtml::encode($data->km_id); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
+	<?php echo CHtml::encode($data->image); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('name')); ?>:</b>
 	<?php echo CHtml::encode($data->name); ?>
 	<br />
@@ -36,6 +40,10 @@
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('introduc')); ?>:</b>
 	<?php echo CHtml::encode($data->introduc); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
+	<?php echo CHtml::encode($data->image); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('namxb')); ?>:</b>

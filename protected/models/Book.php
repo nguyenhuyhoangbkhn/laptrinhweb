@@ -9,9 +9,10 @@
  * @property string $author
  * @property integer $km_id
  * @property string $name
- * @property integer $type
+ * @property string $type
  * @property integer $cost
  * @property string $introduc
+ * @property string $image
  * @property integer $namxb
  * @property integer $slnhap
  * @property integer $slcon
@@ -35,13 +36,14 @@ class Book extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nxb, author, km_id, name, type, cost, introduc, namxb, slnhap, slcon', 'required'),
-			array('km_id, type, cost, namxb, slnhap, slcon', 'numerical', 'integerOnly'=>true),
-			array('nxb, author', 'length', 'max'=>128),
+			array('nxb, author, km_id, name, type, cost, introduc, image, namxb, slnhap, slcon', 'required'),
+			array('km_id, cost, namxb, slnhap, slcon', 'numerical', 'integerOnly'=>true),
+			array('nxb, author, type', 'length', 'max'=>128),
 			array('name', 'length', 'max'=>200),
+			array('image', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, nxb, author, km_id, name, type, cost, introduc, namxb, slnhap, slcon', 'safe', 'on'=>'search'),
+			array('id, nxb, author, km_id, name, type, cost, introduc, image, namxb, slnhap, slcon', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,6 +72,7 @@ class Book extends CActiveRecord
 			'type' => 'Type',
 			'cost' => 'Cost',
 			'introduc' => 'Introduc',
+			'image' => 'Image',
 			'namxb' => 'Namxb',
 			'slnhap' => 'Slnhap',
 			'slcon' => 'Slcon',
@@ -99,9 +102,10 @@ class Book extends CActiveRecord
 		$criteria->compare('author',$this->author,true);
 		$criteria->compare('km_id',$this->km_id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('type',$this->type);
+		$criteria->compare('type',$this->type,true);
 		$criteria->compare('cost',$this->cost);
 		$criteria->compare('introduc',$this->introduc,true);
+		$criteria->compare('image',$this->image,true);
 		$criteria->compare('namxb',$this->namxb);
 		$criteria->compare('slnhap',$this->slnhap);
 		$criteria->compare('slcon',$this->slcon);
@@ -119,8 +123,35 @@ class Book extends CActiveRecord
 	 */
 	public static function model($className=__CLASS__)
 	{
+		
 		return parent::model($className);
 	}
+
+
+
+	public function getTagLinks()
+	{
+		$links=array();
+		foreach(Tacgia::string2array($this->tags) as $tag)
+			$links[]=CHtml::link(CHtml::encode($tag), array('post/index', 'tag'=>$tag));
+		return $links;
+	}
+
+
+	public function normalizeTags($attribute,$params)
+	{
+	    $this->tags=Tacgia::array2string(array_unique(Tag::string2array($this->tags)));
+	}
+	/**
+	 * @return array relational rules.
+	 */
+	
+	protected function afterFind()
+	{
+		parent::afterFind();
+		$this->_oldTags=$this->author;
+	}
+	
 	protected function afterSave()
 	{
 		parent::afterSave();

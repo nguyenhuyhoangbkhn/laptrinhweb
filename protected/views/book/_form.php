@@ -20,21 +20,10 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<h2>Mời bạn nhập tên sách</h2>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'name'); ?>
-	</div>
-	<div class="row">
-		<h2>Mời bạn nhập tên nhà xuất bản</h2>
+		<?php echo $form->labelEx($model,'nxb'); ?>
 		<?php echo $form->textField($model,'nxb',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'nxb'); ?>
 	</div>
-
-	<!-- <div class="row">
-		<?php echo $form->labelEx($model,'author'); ?>
-		<?php echo $form->textField($model,'author',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'author'); ?>
-	</div> -->
 
 	<div class="row">
 		<h2>Mời bạn nhập tên tác giả</h2>
@@ -50,14 +39,20 @@
 	</div>
 
 	<div class="row">
-		<h2>Mời bạn nhập phần trăm khuyến mại</h2>
-		<?php echo $form->dropDownList($model,'km_id', CHtml::listData(Km::model()->findAll(),'id','phantram')); ?>
+		<?php echo $form->labelEx($model,'km_id'); ?>
+		<?php echo $form->textField($model,'km_id'); ?>
 		<?php echo $form->error($model,'km_id'); ?>
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'name'); ?>
+		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->error($model,'name'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'type'); ?>
-		<?php echo $form->textField($model,'type'); ?>
+		<?php echo $form->textField($model,'type',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'type'); ?>
 	</div>
 
@@ -71,6 +66,12 @@
 		<?php echo $form->labelEx($model,'introduc'); ?>
 		<?php echo $form->textArea($model,'introduc',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'introduc'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'image'); ?>
+		<?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->error($model,'image'); ?>
 	</div>
 
 	<div class="row">

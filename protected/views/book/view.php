@@ -29,6 +29,7 @@ $this->menu=array(
 		'type',
 		'cost',
 		'introduc',
+		'image',
 		'namxb',
 		'slnhap',
 		'slcon',

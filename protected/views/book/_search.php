@@ -38,7 +38,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'type'); ?>
-		<?php echo $form->textField($model,'type'); ?>
+		<?php echo $form->textField($model,'type',array('size'=>60,'maxlength'=>128)); ?>
 	</div>
 
 	<div class="row">
@@ -49,6 +49,11 @@
 	<div class="row">
 		<?php echo $form->label($model,'introduc'); ?>
 		<?php echo $form->textArea($model,'introduc',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'image'); ?>
+		<?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>300)); ?>
 	</div>
 
 	<div class="row">
