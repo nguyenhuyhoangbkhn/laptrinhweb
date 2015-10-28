@@ -24,19 +24,20 @@ class UserController extends Controller
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
+	
 	public function accessRules()
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('view','create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('index','create','admin','delete'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -67,11 +68,21 @@ class UserController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
+			$password=$_POST['User']['password'];
+			$model->password = md5($password);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
+			//$model->username= null;
+			//$model->password= null;
+			//$model->email= null;
+			//$model->id= null;
+			//if($model->save())
+				//$this->redirect(array('view','id'=>$model->id));
+				//$this->redirect(array('create','model'=>$model));
 		}
 
 		$this->render('create',array(

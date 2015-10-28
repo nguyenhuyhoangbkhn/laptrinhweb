@@ -681,3 +681,21 @@ Stack trace:
 REQUEST_URI=/bansach/index.php?r=book/index
 HTTP_REFERER=http://localhost/bansach/index.php?r=book/create
 ---
+2015/10/28 11:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('post')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('post')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('user/post')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/bansach/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/bansach/index.php?r=user/post
+---
+2015/10/28 11:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /var/www/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('post')
+#1 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/bansach/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bansach/index.php?r=post
+---
