@@ -18,12 +18,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>150)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'profile'); ?>
-		<?php echo $form->textArea($model,'profile',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'content'); ?>
+		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'image'); ?>
+		<?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>150)); ?>
 	</div>
 
 	<div class="row">

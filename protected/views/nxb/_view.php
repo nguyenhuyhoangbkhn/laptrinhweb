@@ -13,8 +13,12 @@
 	<?php echo CHtml::encode($data->name); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('profile')); ?>:</b>
-	<?php echo CHtml::encode($data->profile); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
+	<?php echo CHtml::encode($data->content); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
+	<?php echo CHtml::encode($data->image); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('frequency')); ?>:</b>

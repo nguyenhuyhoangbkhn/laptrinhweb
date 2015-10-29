@@ -6,7 +6,7 @@ class NxbController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/column1';
 
 	/**
 	 * @return array action filters
@@ -127,7 +127,17 @@ class NxbController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+	public function actionTop(){
 
+		$criteria = new CDbCriteria ();	
+		$criteria->order = 'frequency desc';
+		$criteria->limit = 3;
+		$top_nxb = Nxb::model()->findAll($criteria);
+
+		$this->render('layouts/main',array(
+			'top_nxb'=>$top_nxb,
+		));
+	}
 	/**
 	 * Manages all models.
 	 */

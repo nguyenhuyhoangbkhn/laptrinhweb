@@ -21,14 +21,20 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>150)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'profile'); ?>
-		<?php echo $form->textArea($model,'profile',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'profile'); ?>
+		<?php echo $form->labelEx($model,'content'); ?>
+		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'content'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'image'); ?>
+		<?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>150)); ?>
+		<?php echo $form->error($model,'image'); ?>
 	</div>
 
 	<div class="row">

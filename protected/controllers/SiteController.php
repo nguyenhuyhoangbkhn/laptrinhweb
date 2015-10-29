@@ -29,7 +29,36 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		// $criteria = new CDbCriteria ();
+		// $criteria->order = 'id desc';		
+		// $newest_book = Book::model()->find($criteria);
+		
+		//sach moi
+		$criteria = new CDbCriteria ();	
+		$criteria->order = 'id desc';
+		$criteria->limit = 9;
+		$list_book = Book::model()->findAll($criteria);
+
+		//sach moi nhat
+		$criteria=new CDbCriteria(array(
+		'order'=>'id DESC',
+		'limit'=>'1'	
+		));
+		// $dataProvider=new CActiveDataProvider('Book',array(
+		// // 'pagination'=>array(
+		// // 	'pageSize'=>Yii::app()->params['booksPerPage'],
+		// // ),
+		// 'criteria'=>$criteria,
+		// ));
+		$dataProvider = Book::model()->find($criteria);
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		// $this->render('index');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+			'list_book'=>$list_book,
+			
+		));
 	}
 
 	/**

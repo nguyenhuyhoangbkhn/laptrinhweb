@@ -157,4 +157,15 @@ class Book extends CActiveRecord
 		parent::afterSave();
 		Tacgia::model()->updateFrequency($this->_oldTags, $this->author);
 	}
+	public function behaviors() {
+	        return array(
+	            'commentable' => array(
+	                'class' => 'ext.comment-module.behaviors.CommentableBehavior',
+	                // name of the table created in last step
+	                'mapTable' => 'posts_comments_nm',
+	                // name of column to related model id in mapTable
+	                'mapRelatedColumn' => 'postId'
+	            ),
+	       );
+    }
 }

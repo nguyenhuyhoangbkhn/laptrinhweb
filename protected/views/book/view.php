@@ -1,37 +1,22 @@
+<div class="row">
+<img class="col-md-5 img-sachmoi"src="<?php echo $model->image;?>">
+	<p class="title-ranking"><?php echo $model->name;?> </p>
+	<span class="author">Tác giả: </span>
+	<span><?php echo $model->author; ?></span>
+	<br/>
+	<br/>
+	<span class="author">Nhà xuất bản: </span>
+	<span><?php echo $model->nxb; ?></span>
+	<br/>
+	<br/>
+	<button class="btn btn-create">Đặt mua</button>
+	<div class="col-md-12 margin-top-20">
+	<span class="author">Giới thiệu: </span>
+	<span class="decription"><?php echo $model->introduc; ?></span>
+	</div>
+</div>
 <?php
-/* @var $this BookController */
-/* @var $model Book */
-
-$this->breadcrumbs=array(
-	'Books'=>array('index'),
-	$model->name,
-);
-
-$this->menu=array(
-	array('label'=>'List Book', 'url'=>array('index')),
-	array('label'=>'Create Book', 'url'=>array('create')),
-	array('label'=>'Update Book', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Book', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Book', 'url'=>array('admin')),
-);
+	$this->renderPartial('comment.views.comment.commentList',array(
+		'model'=>$model
+		));
 ?>
-
-<h1>View Book #<?php echo $model->id; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'nxb',
-		'author',
-		'km_id',
-		'name',
-		'type',
-		'cost',
-		'introduc',
-		'image',
-		'namxb',
-		'slnhap',
-		'slcon',
-	),
-)); ?>

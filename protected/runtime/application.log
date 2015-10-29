@@ -699,3 +699,467 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/bansach/index.php?r=post
 ---
+2015/10/28 08:43:54 [error] [php] Undefined variable: model (C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(47): SiteController->render()
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php (11)
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 08:44:17 [error] [php] Undefined variable: criteria (C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php:11)
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(47): SiteController->render()
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php (11)
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 09:04:37 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.image" is not defined.' in C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php(11): CComponent->__get('image')
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/site/index')
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=book/admin
+---
+2015/10/28 09:05:10 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.author" is not defined.' in C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php(12): CComponent->__get('author')
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/site/index')
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=book/admin
+---
+2015/10/28 15:17:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bansach.tbl_nxb' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_nxb`.
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 15:17:14 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{nxb}}" for active record class "Nxb" cannot be found in the database.' in C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Nxb))
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\gii\generators\crud\CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=gii/crud/index
+---
+2015/10/28 15:17:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bansach.tbl_nxb' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_nxb`.
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 15:17:35 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{nxb}}" for active record class "Nxb" cannot be found in the database.' in C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Nxb))
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\gii\generators\crud\CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=gii/crud/index
+---
+2015/10/28 15:18:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bansach.tbl_nxb' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_nxb`.
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 15:18:50 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{nxb}}" for active record class "Nxb" cannot be found in the database.' in C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Nxb))
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\gii\generators\crud\CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=gii/crud/index
+---
+2015/10/28 16:36:28 [error] [exception.CException] exception 'CException' with message 'Property "Nxb.url" is not defined.' in C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('url')
+#1 C:\xampp\htdocs\ha123\laptrinhweb\protected\components\views\top_nxb.php(9): CActiveRecord->__get('url')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, false)
+#5 C:\xampp\htdocs\ha123\laptrinhweb\protected\components\wTop_nxb.php(17): CWidget->render('top_nxb', Array)
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(181): wTop_nxb->run()
+#7 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\layouts\main.php(75): CBaseController->widget('wTop_nxb')
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(214): COutputProcessor->run()
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#15 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#16 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(61): CController->render('index', Array)
+#20 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#21 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#23 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#25 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/site/index')
+#26 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php
+---
+2015/10/28 16:36:49 [error] [exception.CException] exception 'CException' with message 'Property "Nxb.images" is not defined.' in C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('images')
+#1 C:\xampp\htdocs\ha123\laptrinhweb\protected\components\views\top_nxb.php(10): CActiveRecord->__get('images')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, false)
+#5 C:\xampp\htdocs\ha123\laptrinhweb\protected\components\wTop_nxb.php(17): CWidget->render('top_nxb', Array)
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(181): wTop_nxb->run()
+#7 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\layouts\main.php(75): CBaseController->widget('wTop_nxb')
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(214): COutputProcessor->run()
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#15 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#16 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(61): CController->render('index', Array)
+#20 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#21 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#23 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#25 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/site/index')
+#26 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php
+---
+2015/10/28 17:21:19 [error] [exception.CException] exception 'CException' with message 'Property "Book.url" is not defined.' in C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('url')
+#1 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php(2): CActiveRecord->__get('url')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(61): CController->render('index', Array)
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/site/index')
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php
+---
+2015/10/28 17:24:25 [error] [exception.CException] exception 'CException' with message 'Property "Book.url" is not defined.' in C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('url')
+#1 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php(2): CActiveRecord->__get('url')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(61): CController->render('index', Array)
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/site/index')
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php
+---
+2015/10/28 17:24:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=26".' in C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(270): CController->missingAction('view?id=26')
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('view?id=26')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/book/view?id=2...')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/book/view?id=26
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=/site/index
+---
+2015/10/28 17:26:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=1".' in C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(270): CController->missingAction('view?id=1')
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('view?id=1')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/book/view?id=1')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/book/view?id=1
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=/site/index
+---
+2015/10/28 17:26:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?id=1".' in C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(270): CController->missingAction('view?id=1')
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('view?id=1')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/book/view?id=1')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/book/view?id=1
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=/site/index
+---
+2015/10/28 17:33:37 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\ha123\laptrinhweb\protected\views\book\view.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): BookController->renderFile()
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): BookController->renderPartial()
+#2 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\BookController.php(51): BookController->render()
+#3 unknown(0): BookController->actionView()
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(133): BookController->runAction()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CInlineFilter.php(58): BookController->filterAccessControl()
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): BookController->runActionWithFilters()
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): BookController->run()
+#15 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/book/view&id=26
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\views\book\view.php (2)
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\BookController.php (51)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 17:40:57 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php:20)
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php(61): SiteController->render()
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/site/index
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\views\site\index.php (20)
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\SiteController.php (61)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 17:55:15 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\ha123\laptrinhweb\protected\views\nxb\view.php:5)
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): NxbController->renderFile()
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): NxbController->renderPartial()
+#2 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\NxbController.php(56): NxbController->render()
+#3 unknown(0): NxbController->actionView()
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(133): NxbController->runAction()
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CInlineFilter.php(58): NxbController->filterAccessControl()
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): NxbController->runActionWithFilters()
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): NxbController->run()
+#15 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CWebApplication->run()
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/nxb/view&id=3
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\views\nxb\view.php (5)
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\NxbController.php (56)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/28 17:55:30 [error] [exception.CException] exception 'CException' with message 'Property "Nxb.introduc" is not defined.' in C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('introduc')
+#1 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\nxb\view.php(5): CActiveRecord->__get('introduc')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\NxbController.php(56): CController->render('view', Array)
+#7 [internal function]: NxbController->actionView('3')
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(NxbController), Array)
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(NxbController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/nxb/view')
+#20 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/nxb/view&id=3
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=/book/view&id=21
+---
+2015/10/29 02:54:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bansach.comments' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `comments`.
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\behaviors\CommentableBehavior.php (106)
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\behaviors\CommentableBehavior.php (157)
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\views\comment\commentList.php (6)
+2015/10/29 02:54:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "comments" for active record class "Comment" cannot be found in the database.' in C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Comment))
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\YiiBase.php(217): CActiveRecord->__construct()
+#3 C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\behaviors\CommentableBehavior.php(106): YiiBase::createComponent('comment.models....')
+#4 C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\behaviors\CommentableBehavior.php(157): CommentableBehavior->getComments()
+#5 [internal function]: CommentableBehavior->getCommentDataProvider()
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getCommentDataP...', Array)
+#8 C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\views\comment\commentList.php(6): CActiveRecord->__call('getCommentDataP...', Array)
+#9 C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\views\comment\commentList.php(6): Book->getCommentDataProvider()
+#10 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\ha123\laptrinhweb\protected\views\book\view.php(21): CController->renderPartial('comment.views.c...', Array)
+#14 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\ha123\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#17 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#18 C:\xampp\htdocs\ha123\laptrinhweb\protected\controllers\BookController.php(51): CController->render('view', Array)
+#19 [internal function]: BookController->actionView('26')
+#20 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BookController), Array)
+#21 C:\xampp\htdocs\ha123\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BookController), Object(ReflectionMethod), Array)
+#22 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('view')
+#31 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/book/view')
+#32 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/book/view&id=26
+HTTP_REFERER=http://localhost/ha123/laptrinhweb/index.php?r=/site/index
+---
+2015/10/29 02:57:41 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\controllers\CommentController.php (50)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/29 02:57:41 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\controllers\CommentController.php (50)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/29 03:17:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\ha123\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\ha123\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/user/admin')
+#9 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/user/admin
+---
+2015/10/29 03:18:31 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\controllers\CommentController.php (50)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/29 03:18:31 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in C:\xampp\htdocs\ha123\laptrinhweb\protected\extensions\comment-module\controllers\CommentController.php (50)
+in C:\xampp\htdocs\ha123\laptrinhweb\index.php (13)
+2015/10/29 03:19:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\ha123\yii_framework\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\ha123\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/book/index.php')
+#3 C:\xampp\htdocs\ha123\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\ha123\laptrinhweb\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ha123/laptrinhweb/index.php?r=/book/index.php
+---

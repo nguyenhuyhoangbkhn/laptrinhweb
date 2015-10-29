@@ -1,20 +1,33 @@
-<?php
-/* @var $this SiteController */
+<div class="row">
+<a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=/book/view&id=<?php echo $dataProvider->id;?>">
+<img class="col-md-5 img-sachmoi"src="<?php echo $dataProvider->image;?>">
+	<p class="title-ranking"><?php echo $dataProvider->name;?> </p>
+</a>
+	<span class="author">Author: </span>
+	<span><?php echo $dataProvider->author; ?></span>
+	<p class="decription"><?php echo $dataProvider->introduc; ?></p>
+<a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=/book/view&id=<?php echo $dataProvider->id;?>">
+<p class="seemore">Mua sách</p>
+</a>
+</div>
+<div id="ranking-itineary" class="row nplr">
+	<p>Sách mới</p>
+</div>
+<div class=" row">
+	<?php for($i=0; $i<9; $i++):?>
+    <?php if(isset($list_book[$i])):?>
+    <?php $data = $list_book[$i];?>
+	<div class="col-sm-4 book-new">
+		<a class="sachmoi-ten" href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=/book/view&id=<?php echo $list_book[$i]->id;?>">
+		<img class="sachmoi"src="<?php echo $list_book[$i]->image?>">
+		<p><?php echo $list_book[$i]->name; ?></p>
+		</a>
+		<p class="sachmoi-ten"><?php echo $list_book[$i]->cost; ?> vnđ</p>
+	</div>
+	<?php endif;?>
+    <?php endfor;?>
+</div>
+<div id="ranking-itineary" class="row nplr margin-top-20">
+	<p>Sách bán chạy</p>
 
-$this->pageTitle=Yii::app()->name;
-?>
-
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+</div>
